@@ -1,0 +1,16 @@
+option('zlib',          type: 'boolean', value: 'true',     description: 'Use Zlib')
+option('linux-crypto',  type: 'boolean', value: 'false',    description: 'Use Linux hash algorithm interface')
+option('gcrypt',        type: 'boolean', value: 'false',    description: 'Use gcrypt')
+option('libcrypto',     type: 'boolean', value: 'false',    description: 'Use libcrypto')
+option('mbedtls',       type: 'boolean', value: 'false',    description: 'Use mbed TLS')
+option('nettle',        type: 'boolean', value: 'false',    description: 'Use nettle')
+option('nss',           type: 'boolean', value: 'false',    description: 'Use nss')
+option('glib-checksums',type: 'boolean', value: 'true',     description: 'Use the Glib Data Checksums API')
+option('mhash',         type: 'boolean', value: 'false',    description: 'Use mhash')
+option('internal-md6',  type: 'boolean', value: 'true',     description: 'Use the internal md6 library')
+
+# You should manually enable one of them on the command line.
+option('build-gtkhash', type: 'boolean', value: 'false',    description: 'Build GTKHash')
+option('build-nautilus',type: 'boolean', value: 'false',    description: 'Build the Nautilus extension')
+option('build-nemo',    type: 'boolean', value: 'false',    description: 'Build the Nemo extension')
+option('build-thunar',  type: 'boolean', value: 'false',    description: 'Build the Thunar extension')
